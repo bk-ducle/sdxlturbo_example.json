@@ -3,6 +3,9 @@
     "workflow": {
       "5": {
         "inputs": {
+          "width": 512,
+          "height": 512,
+          "batch_size": 1,
           "value": 512
         },
         "class_type": "EmptyLatentImage",
@@ -12,7 +15,7 @@
       },
       "6": {
         "inputs": {
-          "text": "beautiful landscape scenery a dog is playing",
+          "text": "A cat play with his toy",
           "clip": [
             "20",
             1
@@ -54,6 +57,9 @@
       },
       "13": {
         "inputs": {
+          "cfg": 1,
+          "noise_seed": 0,
+          "add_noise": true,
           "value": true,
           "model": [
             "20",
@@ -87,7 +93,8 @@
       },
       "14": {
         "inputs": {
-          "text": "euler_ancestral"
+          "text": "euler_ancestral",
+          "sampler_name": "euler_ancestral"
         },
         "class_type": "KSamplerSelect",
         "_meta": {
@@ -105,6 +112,8 @@
       },
       "22": {
         "inputs": {
+          "steps": 1,
+          "denoise": 1,
           "value": 1,
           "model": [
             "20",
